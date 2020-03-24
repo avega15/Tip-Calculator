@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tip Calculator</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<div id="container">
+		<h2>Tip Calculator</h2>
+	<div id="calculator">
+	<div id="form">
+		<h3>How much was your bill?</h3>
+		<input id="bill" type="text" placeholder="Bill Amount">
+		<h3>How was the service?</h3>
+		<select id="service">
+			<option>Choose One</option>
+			<option value="0.0">0%-Average</option>
+			<option value="0.1">10%-Good</option>
+			<option value="0.2">20%-Excellent</option>
+		</select>
+
+		<button id="calculate"type ="button">Calculate</button>
+	</form>
+
+	<div id="tooltip">
+		<h3>Tip Total:-
+		<span id=tipTotal></span>
+		</h3>
+		<h3>Bill Total:-
+		<span id=billTotal>
+		</h3>
+	</div>
+
+ <script src="js/scripts.js"></script>
+</body>
+</html>
