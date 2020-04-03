@@ -4,7 +4,12 @@ function calculateTip(){
 	let tipTotal = 	document.getElementById("tipTotal").value;
 	let billTotal = document.getElementById("billTotal").value;
 
-
+	if(bill == 0){
+		alert("Input a bill amount");
+		document.getElementById("tipTotal").innerHTML = "";
+		document.getElementById("billTotal").innerHTML = "";
+		return;
+	}
 	//Tip Calculation
 	let total = bill * quality;
 	let Total = parseFloat(bill) + parseFloat(total);
